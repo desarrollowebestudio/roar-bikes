@@ -58,7 +58,11 @@ div.areaActiva {
 
 h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 40px;
+  font-size: 3.25rem;
+}
+
+p {
+  font-size: 1.125rem;
 }
 
 /*
@@ -100,13 +104,11 @@ main {
 
 #contenedorTextoHero {
   flex: 2;
-  background-color: cornflowerblue;
 }
 
 #contenedorImagenHero {
   flex: 1;
   min-height: inherit;
-  background-color: skyblue;
   background-image: url(/imagenes/imagenHero.jpg);
   background-size: contain;
   background-repeat: no-repeat;
