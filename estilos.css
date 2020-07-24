@@ -30,6 +30,10 @@ ESTILOS GENERALES
 =================
 */
 
+body {
+  background-color: hsl(0, 100%, 70%);
+}
+
 div.areaActiva {
   width: 1024px;
   min-height: 300px;
@@ -45,8 +49,25 @@ HEADER (ENCABEZADO)
 */
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: hsl(125, 60%, 25%);
-  min-height: 100px;
+  padding: 0.5em 0;
+}
+
+#contenedorLogo img {
+  height: 70px;
+}
+
+nav {
+  background-color: lightgoldenrodyellow;
+}
+
+nav li {
+  display: inline;
+  text-transform: uppercase;
+  margin-left: 2em;
 }
 
 /*
@@ -69,10 +90,12 @@ main {
 
 #contenedorImagenHero {
   flex: 1;
-}
-
-#contenedorImagenHero img {
-  width: 100%;
+  min-height: inherit;
+  background-color: skyblue;
+  background-image: url(/imagenes/imagenHero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /*
