@@ -35,7 +35,9 @@ ESTILOS GENERALES
 */
 
 body {
+  font-family: Arial, sans-serif;
   background-image: linear-gradient(#FC5E55, #FA4083);
+  color: white;
 }
 
 div.areaActiva {
@@ -44,6 +46,10 @@ div.areaActiva {
   background-color: hsl(125, 50%, 15%);
   margin-left: auto;
   margin-right: auto;
+}
+
+h1 {
+  font-size: 40px;
 }
 
 /*
@@ -62,10 +68,6 @@ header {
 
 #contenedorLogo img {
   height: 70px;
-}
-
-nav {
-  background-color: lightgoldenrodyellow;
 }
 
 nav li {
