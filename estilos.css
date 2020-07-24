@@ -69,4 +69,22 @@ SECCIÓN SERVICIOS
 #seccionServicios {
   background-color: hsl(125, 60%, 50%);
   min-height: 300px;
+  display: flex;
+}
+
+#seccionServicios > article {
+  min-height: inherit;
+  width: calc(100% / 3);
+}
+
+#carta1 {
+  background-color: hsl(330, 85%, 60%);
+}
+
+#carta2 {
+  background-color: hsl(330, 80%, 70%);
+}
+
+#carta3 {
+  background-color: hsl(330, 50%, 40%);
 }
