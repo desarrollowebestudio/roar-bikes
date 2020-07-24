@@ -1,5 +1,13 @@
 /*
 =============
+IMPORTACIONES
+=============
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300');
+
+/*
+=============
 RESET ESTILOS
 =============
 */
@@ -35,7 +43,7 @@ ESTILOS GENERALES
 */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(#FC5E55, #FA4083);
   color: white;
 }
@@ -49,6 +57,7 @@ div.areaActiva {
 }
 
 h1 {
+  font-family: 'Playfair Display', serif;
   font-size: 40px;
 }
 
