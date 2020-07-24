@@ -12,6 +12,10 @@ RESET ESTILOS
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   line-height: 1;
 }
@@ -31,7 +35,7 @@ ESTILOS GENERALES
 */
 
 body {
-  background-color: hsl(0, 100%, 70%);
+  background-image: linear-gradient(#FC5E55, #FA4083);
 }
 
 div.areaActiva {
