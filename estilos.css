@@ -50,14 +50,27 @@ header {
 }
 
 /*
-===================
-CONTENIDO PRINCIPAL
-===================
+==========================
+CONTENIDO PRINCIPAL (HERO)
+==========================
 */
 
 main {
+  display: flex;
   background-color: hsl(125, 60%, 40%);
   min-height: 300px;
+}
+
+#contenedorTextoHero {
+  flex-basis: 0;
+  flex-grow: 2;
+  background-color: cornflowerblue;
+}
+
+#contenedorImagenHero {
+  flex-basis: 0;
+  flex-grow: 1;
+  background-color: skyblue;
 }
 
 /*
@@ -74,7 +87,6 @@ SECCIÓN SERVICIOS
 }
 
 #seccionServicios > article {
-  min-height: inherit;
   width: 30%;
 }
 
