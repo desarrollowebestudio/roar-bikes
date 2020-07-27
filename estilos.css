@@ -118,7 +118,7 @@ main {
   flex: 1;
   min-height: inherit;
   background-color: cornflowerblue;
-  background-image: url(/imagenes/imagenHero.jpg);
+  background-image: url('/imagenes/imagenHero.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -139,16 +139,18 @@ SECCIÓN SERVICIOS
 
 #seccionServicios article {
   width: 30%;
+  background-size: cover;
+  background-position: center;
 }
 
 #carta1 {
-  background-color: hsl(330, 85%, 60%);
+  background-image: url('/imagenes/imagenCarta1.jpg');
 }
 
 #carta2 {
-  background-color: hsl(330, 80%, 70%);
+  background-image: url('/imagenes/imagenCarta2.jpg');
 }
 
 #carta3 {
-  background-color: hsl(330, 50%, 40%);
+  background-image: url('/imagenes/imagenCarta3.jpg');
 }
