@@ -50,16 +50,23 @@ body {
 
 div.areaActiva {
   width: 1024px;
-  min-height: 300px;
   background-color: hsl(125, 50%, 15%);
   margin-left: auto;
   margin-right: auto;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5em;
+}
+
+h1 {
   font-size: 3.25rem;
-  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
 }
 
 p {
@@ -117,7 +124,6 @@ main {
 #contenedorImagenHero {
   flex: 1;
   min-height: inherit;
-  background-color: cornflowerblue;
   background-image: url('/imagenes/imagenHero.jpg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -141,6 +147,13 @@ SECCIÓN SERVICIOS
   width: 30%;
   background-size: cover;
   background-position: center;
+  padding: 1em;
+}
+
+#seccionServicios p {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.6;
 }
 
 #carta1 {
