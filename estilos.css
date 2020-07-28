@@ -29,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 /*
 =================
 ESTILOS GENERALES
@@ -140,6 +144,10 @@ SECCIÓN SERVICIOS
   width: 30%;
   background-size: cover;
   background-position: bottom;
+}
+
+#seccionServicios a {
+  height: 100%;
   padding: 1em;
   display: flex;
   flex-direction: column;
