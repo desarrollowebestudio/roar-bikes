@@ -13,18 +13,11 @@ RESET ESTILOS
 */
 
 * {
-  font-size: 1rem;
-  font: inherit;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  height: 100%;
-}
-
-body {
+  font-size: 1rem;
+  font: inherit;
   line-height: 1;
 }
 
@@ -45,6 +38,7 @@ ESTILOS GENERALES
 body {
   font-family: 'Roboto', sans-serif;
   background-image: linear-gradient(#FC5E55, #FA4083);
+  background-attachment: fixed;
   color: white;
 }
 
@@ -66,7 +60,6 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  text-align: center;
 }
 
 p {
@@ -146,14 +139,27 @@ SECCIÓN SERVICIOS
 #seccionServicios article {
   width: 30%;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #seccionServicios p {
-  text-align: center;
   font-size: 0.85rem;
   line-height: 1.6;
+  text-align: center;
+}
+
+#seccionServicios i {
+  font-size: 2rem;
+  margin-right: 0.3em;
+}
+
+#seccionServicios h2 {
+  display: inline-block;
 }
 
 #carta1 {
