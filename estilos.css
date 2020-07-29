@@ -33,6 +33,23 @@ a:visited {
   color: inherit;
 }
 
+/* 
+=========
+VARIABLES
+=========
+*/
+
+html {
+
+  /* Colores */
+  --colorPrimario: hsl(0, 98%, 65%);
+  --colorGradiente: hsl(340, 98%, 65%);
+
+  /* Fuentes */
+  --fuenteTitulos: 'Playfair Display', serif;
+  --fuenteCuerpo: 'Roboto', sans-serif;
+}
+
 /*
 =================
 ESTILOS GENERALES
@@ -40,21 +57,20 @@ ESTILOS GENERALES
 */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-image: linear-gradient(#FC5E55, #FA4083);
+  font-family: var(--fuenteCuerpo);
+  background-image: linear-gradient(var(--colorPrimario), var(--colorGradiente));
   background-attachment: fixed;
   color: white;
 }
 
 div.areaActiva {
   width: 1024px;
-  background-color: hsl(125, 50%, 15%);
   margin-left: auto;
   margin-right: auto;
 }
 
 h1, h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fuenteTitulos);
   margin-bottom: 0.5em;
 }
 
@@ -83,12 +99,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsl(125, 60%, 25%);
-  padding: 0.5em 0;
+  padding: 0.75em 0;
 }
 
 #contenedorLogo img {
-  height: 70px;
+  height: 60px;
 }
 
 nav li {
@@ -106,8 +121,8 @@ CONTENIDO PRINCIPAL (HERO)
 main {
   display: flex;
   align-items: center;
-  min-height: 300px;
-  background-color: hsl(125, 60%, 40%);
+  min-height: 320px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.25);
 }
 
 #contenedorTextoHero {
@@ -127,6 +142,18 @@ main {
   background-position: center;
 }
 
+a.boton {
+  letter-spacing: 0.1em;
+  background-color: white;
+  color: var(--colorPrimario);
+  font-size: 0.8rem;
+  padding: 1.2em 3em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 0.8rem;
+}
+
 /*
 =================
 SECCIÓN SERVICIOS
@@ -134,7 +161,6 @@ SECCIÓN SERVICIOS
 */
 
 #seccionServicios {
-  background-color: hsl(125, 60%, 50%);
   min-height: 300px;
   display: flex;
   justify-content: space-between;
