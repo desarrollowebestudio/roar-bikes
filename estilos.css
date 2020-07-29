@@ -42,12 +42,16 @@ VARIABLES
 html {
 
   /* Colores */
-  --colorPrimario: hsl(0, 98%, 65%);
-  --colorGradiente: hsl(340, 98%, 65%);
+  --colorPrimario: hsl(0, 95%, 65%);
+  --colorGradiente: hsl(340, 95%, 65%);
 
   /* Fuentes */
   --fuenteTitulos: 'Playfair Display', serif;
   --fuenteCuerpo: 'Roboto', sans-serif;
+
+  /* Estilos */
+  --sombraGeneral: 0px 1px 1px rgba(0, 0, 0, 0.4);
+
 }
 
 /*
@@ -76,6 +80,7 @@ h1, h2 {
 
 h1 {
   font-size: 3.25rem;
+  text-shadow: var(--sombraGeneral);
 }
 
 h2 {
@@ -152,6 +157,7 @@ a.boton {
   border-radius: 5px;
   display: inline-block;
   margin-top: 0.8rem;
+  box-shadow: var(--sombraGeneral);
 }
 
 /*
@@ -170,6 +176,7 @@ SECCIÓN SERVICIOS
   width: 30%;
   background-size: cover;
   background-position: bottom;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 #seccionServicios a {
