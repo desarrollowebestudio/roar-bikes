@@ -42,8 +42,8 @@ VARIABLES
 html {
 
   /* Colores */
-  --colorPrimario: hsl(0, 95%, 65%);
-  --colorGradiente: hsl(340, 95%, 65%);
+  --colorPrimario: hsl(0, 98%, 65%);
+  --colorGradiente: hsl(340, 98%, 65%);
 
   /* Fuentes */
   --fuenteTitulos: 'Playfair Display', serif;
@@ -88,8 +88,8 @@ h2 {
 }
 
 p {
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
   text-align: justify;
 }
@@ -164,6 +164,10 @@ main {
   background-position: center;
 }
 
+#contenedorTextoHero p {
+  font-size: 1.125rem;
+}
+
 #contenedorTextoHero a.boton {
   margin-top: 0.8rem;
   background-color: white;
@@ -223,4 +227,30 @@ SECCIÓN SERVICIOS
 
 #carta3 {
   background-image: url('/imagenes/imagenCarta3.jpg');
+}
+
+/* 
+====================
+SECCIÓN: TESTIMONIOS
+====================
+*/
+
+#seccionTestimonios {
+  margin: 30px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div.cartaTestimonio {
+  margin: 15px 0px;
+  width: 48%;
+  border: 1.5px solid white;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+}
+
+p.autorTestimonio {
+  font-family: var(--fuenteTitulos);
+  font-size: 1rem;
 }
