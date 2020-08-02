@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div[class^='boton'] {
+  padding: 0.75em 0px;
+  text-align: center;
+  width: 150px;
+}
+
+div.botonNavegacion {
+  background-color: lawngreen;
+  display: inline-block;
+  position: relative;
+}
+
+div.menuDesplegable {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0%;
+  top: 100%;
+}
+
+div.botonNavegacion:hover div.menuDesplegable {
+  display: initial;
+}
+
+div.botonDesplegable {
+  background-color: lightcyan;
+}
+
+div.botonDesplegable:hover {
+  background-color: skyblue;
+  transition-duration: 1s;
+}
