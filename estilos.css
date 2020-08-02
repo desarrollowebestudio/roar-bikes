@@ -65,9 +65,14 @@ ESTILOS GENERALES
 */
 
 body {
-  font-family: var(--fuenteCuerpo);
-  background-image: linear-gradient(var(--colorPrimario), var(--colorGradiente));
+  --gradiente: linear-gradient(var(--colorPrimario), var(--colorGradiente));
+  --imagen: url('/imagenes/fondoLogoLeon.png');
+  background-image: var(--imagen), var(--gradiente);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  font-family: var(--fuenteCuerpo);
   color: white;
 }
 
