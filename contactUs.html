@@ -119,7 +119,26 @@
           <!-- Campo 4: Contenido Mensaje -->
           <div class="contenedorCampo">
             <label for="campoMensaje">Mensaje</label>
-            <textarea name="" id="campoMensaje" placeholder="Escriba por favor su mensaje"></textarea>
+            <textarea id="campoMensaje" name="Mensaje" placeholder="Escriba por favor su mensaje"></textarea>
+          </div>
+
+          <!-- Campo 5: Opción Suscribirse -->
+          <div class="contenedorCampo">
+            <input id="campoSuscribirse" type="checkbox" name="Suscribirse" value="Sí" checked/>
+            <label for="campoSuscribirse">Suscribirse a boletines electrónicos</label>
+          </div>
+
+          <!-- Campo 6: Método Contacto -->
+          <div class="contenedorCampo">
+            <span>How would you like to be contacted?</span>
+
+            <!-- Opción A: Correo Electrónico -->
+            <input id="campoMedioContacto" type="radio" name="MedioContacto" value="Correo" checked/>
+            <label for="campoMedioContacto">Correo Electrónico</label>
+
+            <!-- Opción B: Teléfono -->
+            <input id="campoTelefono" type="radio" name="MedioContacto" value="Teléfono"/>
+            <label for="campoTelefono">Teléfono</label>
           </div>
 
           <!-- Botón Enviar -->
