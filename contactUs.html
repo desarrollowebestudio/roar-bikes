@@ -61,11 +61,14 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-      <!-- Texto Sección: Contáctenos -->
-      <h1>Contact Us</h1>
-      <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+      <!-- Sección: Texto Introductorio Contacto -->
+      <section id="seccionTextoContacto">
+        <h1>Contact Us</h1>
+        <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a
+          matter of hours to help you.</p>
+      </section>
 
-      <!-- Medios de Contacto -->
+      <!-- Sección: Medios de Contacto -->
       <section id="seccionMediosContacto">
 
         <!-- E-mail -->
@@ -95,6 +98,22 @@
           <span>+353 546 5481</span>
         </article>
 
+      </section>
+
+      <!-- Sección: Formulario de Contacto -->
+      <section id="seccionFormulario">
+        <form name="Contacto" method="POST" data-netlify="true">
+
+          <!-- Campo 1: Nombre -->
+          <input type="text" name="Nombre"/>
+
+          <!-- Campo 2: E-mail -->
+          <input type="email" name="Correo"/>
+
+          <!-- Botón Enviar -->
+          <input type="submit" value="Enviar"/>
+
+        </form>
       </section>
 
     </main>

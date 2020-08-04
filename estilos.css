@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-:visited {
+a:link, a:visited {
   color: inherit;
 }
 
@@ -233,9 +233,9 @@ CONTENIDO PRINCIPAL: HOME
 }
 
 /* 
-===============================
-CONTENIDO PRINCIPAL: CONTACT US
-===============================
+==============================
+CONTENIDO PRINCIPAL: CONTACTO
+==============================
 */
 
 #seccionMediosContacto {
@@ -266,6 +266,21 @@ div.nombreMedioContacto i {
 div.nombreMedioContacto ~ span {
   padding: 0.75em 0px;
   font-size: 0.875rem;
+  display: block;
+}
+
+
+/*
+==================
+SECCIÓN FORMULARIO
+==================
+*/
+
+#seccionFormulario {
+  margin: 2rem 0px 1rem 0px;
+}
+
+input {
   display: block;
 }
 
