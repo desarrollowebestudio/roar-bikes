@@ -104,33 +104,33 @@
       <section id="seccionFormulario">
         <form name="Contacto" method="POST" data-netlify="true">
 
-          <!-- Campo 1: Nombre -->
+          <!-- Campo 1: Nombre (Campo Texto) -->
           <div class="contenedorCampo">
-            <label for="campoNombre">Name</label>
-            <input id="campoNombre" type="text" name="Nombre" placeholder="Full Name"/>
+            <label class="etiquetaCampoTexto" for="campoNombre">Name</label>
+            <input id="campoNombre" type="text" name="Nombre" placeholder="Full name"/>
           </div>
 
-          <!-- Campo 2: E-mail -->
+          <!-- Campo 2: E-mail (Campo Texto) -->
           <div class="contenedorCampo">
-            <label for="campoCorreo">E-mail</label>
+            <label class="etiquetaCampoTexto" for="campoCorreo">E-mail</label>
             <input id="campoCorreo" type="email" name="Correo" placeholder="E-mail"/>
           </div>
 
-          <!-- Campo 4: Contenido Mensaje -->
+          <!-- Campo 3: Contenido Mensaje (Área Texto) -->
           <div class="contenedorCampo">
-            <label for="campoMensaje">Message</label>
-            <textarea id="campoMensaje" name="Mensaje" placeholder="Please write your message"></textarea>
+            <label class="etiquetaCampoTexto" for="campoMensaje">Message</label>
+            <textarea id="campoMensaje" name="Mensaje" rows="3" placeholder="Please write your message"></textarea>
           </div>
 
-          <!-- Campo 5: Opción Suscribirse -->
+          <!-- Campo 4: Opción Suscribirse (Checkbox) -->
           <div class="contenedorCampo">
             <input id="campoSuscribirse" type="checkbox" name="Suscribirse" value="Sí" checked/>
-            <label for="campoSuscribirse">Subscribe to newsletter e-mails</label>
+            <label for="campoSuscribirse">Subscribe to e-mail newsletter</label>
           </div>
 
-          <!-- Campo 6: Método Contacto -->
+          <!-- Campo 5: Método Contacto (Radio Buttons) -->
           <div class="contenedorCampo">
-            <span>How would you like to be contacted?</span>
+            <p>How would you like to be contacted?</p>
 
             <!-- Opción A: Correo Electrónico -->
             <input id="campoMedioContacto" type="radio" name="MedioContacto" value="Correo" checked/>
@@ -141,9 +141,9 @@
             <label for="campoTelefono">Phone</label>
           </div>
 
-          <!-- Campo 7: Departamento -->
+          <!-- Campo 6: Departamento (Selector) -->
           <div class="contenedorCampo">
-            <label for="campoDepartamento">County</label>
+            <label class="etiquetaCampoTexto" for="campoDepartamento">County</label>
             <select id="campoDepartamento" name="País">
               <option value="Default" selected disabled>Pick a county</option>
               <option value="Limerick">Limerick</option>
@@ -167,22 +167,31 @@
       <!-- Carta 1: Reserva -->
       <article id="carta1">
         <a href="#">
+
+          <!-- Título Carta -->
           <div>
             <i class="fas fa-bicycle"></i>
             <h2>Book Online</h2>
           </div>
+
+          <!-- Texto Carta -->
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nulla soluta molestiae at quibusdam
             officiis quae perspiciatis numquam possimus odio?</p>
+
         </a>
       </article>
 
       <!-- Carta 2: Tipos de Servicios -->
       <article id="carta2">
         <a href="#">
+
+          <!-- Título Carta -->
           <div>
             <i class="fas fa-cog"></i>
             <h2>Service Types</h2>
           </div>
+
+          <!-- Texto Carta -->
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ut delectus impedit ab id officia? Totam
             repellendus accusantium voluptatibus rem!</p>
         </a>
@@ -191,10 +200,14 @@
       <!-- Carta 3: Llamada Telefónica -->
       <article id="carta3">
         <a href="#">
+
+          <!-- Título Carta -->
           <div>
             <i class="fas fa-phone"></i>
             <h2>Call for Advice</h2>
           </div>
+
+          <!-- Texto Carta -->
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati soluta odit deleniti sint excepturi? In
             ea itaque reprehenderit rem accusamus!</p>
         </a>
