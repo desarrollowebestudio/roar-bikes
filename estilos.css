@@ -124,6 +124,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.75em 0;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
 }
 
 #contenedorLogo img {
@@ -180,17 +181,40 @@ div.menuDesplegable a:hover {
 
 
 /*
-==========================
-CONTENIDO PRINCIPAL (HERO)
-==========================
+===========================
+CONTENIDO PRINCIPAL GENERAL
+===========================
 */
 
 main {
-  display: flex;
-  align-items: center;
-  min-height: 320px;
-  border-top: 1px solid hsla(0, 0%, 100%, 0.25);
+  padding: 2rem 0px;
 }
+
+main.hero {
+  display: flex;
+}
+
+main p {
+  font-size: 1.125rem;
+}
+
+main a.boton {
+  margin-top: 0.8rem;
+  background-color: white;
+  color: var(--colorPrimario);
+}
+
+main a.boton:hover {
+  background-color: var(--colorHover);
+  color: white;
+  transition-duration: 0.5s;
+}
+
+/* 
+=========================
+CONTENIDO PRINCIPAL: HOME
+=========================
+*/
 
 #contenedorTextoHero {
   flex: 2;
@@ -202,27 +226,47 @@ main {
 
 #contenedorImagenHero {
   flex: 1;
-  min-height: inherit;
   background-image: url('/imagenes/imagenHero.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-#contenedorTextoHero p {
-  font-size: 1.125rem;
+/* 
+===============================
+CONTENIDO PRINCIPAL: CONTACT US
+===============================
+*/
+
+#seccionMediosContacto {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-#contenedorTextoHero a.boton {
-  margin-top: 0.8rem;
+#seccionMediosContacto article {
+  width: 30%;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+div.nombreMedioContacto {
+  font-family: var(--fuenteTitulos);
   background-color: white;
   color: var(--colorPrimario);
+  padding: 0.3em 0px;
 }
 
-#contenedorTextoHero a.boton:hover {
-  background-color: var(--colorHover);
-  color: white;
-  transition-duration: 0.5s;
+div.nombreMedioContacto i {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+div.nombreMedioContacto ~ span {
+  padding: 0.75em 0px;
+  font-size: 0.875rem;
+  display: block;
 }
 
 /*
@@ -235,6 +279,7 @@ SECCIÓN SERVICIOS
   min-height: 300px;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
 
 #seccionServicios article {
