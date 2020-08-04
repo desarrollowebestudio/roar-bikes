@@ -106,26 +106,26 @@
 
           <!-- Campo 1: Nombre -->
           <div class="contenedorCampo">
-            <label for="campoNombre">Nombre</label>
-            <input id="campoNombre" type="text" name="Nombre" placeholder="Nombre Completo"/>
+            <label for="campoNombre">Name</label>
+            <input id="campoNombre" type="text" name="Nombre" placeholder="Full Name"/>
           </div>
 
           <!-- Campo 2: E-mail -->
           <div class="contenedorCampo">
             <label for="campoCorreo">E-mail</label>
-            <input id="campoCorreo" type="email" name="Correo" placeholder="Correo Electrónico"/>
+            <input id="campoCorreo" type="email" name="Correo" placeholder="E-mail"/>
           </div>
 
           <!-- Campo 4: Contenido Mensaje -->
           <div class="contenedorCampo">
-            <label for="campoMensaje">Mensaje</label>
-            <textarea id="campoMensaje" name="Mensaje" placeholder="Escriba por favor su mensaje"></textarea>
+            <label for="campoMensaje">Message</label>
+            <textarea id="campoMensaje" name="Mensaje" placeholder="Please write your message"></textarea>
           </div>
 
           <!-- Campo 5: Opción Suscribirse -->
           <div class="contenedorCampo">
             <input id="campoSuscribirse" type="checkbox" name="Suscribirse" value="Sí" checked/>
-            <label for="campoSuscribirse">Suscribirse a boletines electrónicos</label>
+            <label for="campoSuscribirse">Subscribe to newsletter e-mails</label>
           </div>
 
           <!-- Campo 6: Método Contacto -->
@@ -134,15 +134,26 @@
 
             <!-- Opción A: Correo Electrónico -->
             <input id="campoMedioContacto" type="radio" name="MedioContacto" value="Correo" checked/>
-            <label for="campoMedioContacto">Correo Electrónico</label>
+            <label for="campoMedioContacto">E-mail</label>
 
             <!-- Opción B: Teléfono -->
             <input id="campoTelefono" type="radio" name="MedioContacto" value="Teléfono"/>
-            <label for="campoTelefono">Teléfono</label>
+            <label for="campoTelefono">Phone</label>
+          </div>
+
+          <!-- Campo 7: Departamento -->
+          <div class="contenedorCampo">
+            <label for="campoDepartamento">County</label>
+            <select id="campoDepartamento" name="País">
+              <option value="Default" selected disabled>Pick a county</option>
+              <option value="Limerick">Limerick</option>
+              <option value="Galway">Galway</option>
+              <option value="Dublin">Dublin</option>
+            </select>
           </div>
 
           <!-- Botón Enviar -->
-          <button class="boton" type="submit">Enviar</button>
+          <button class="boton" type="submit">Submit</button>
 
         </form>
       </section>
