@@ -24,16 +24,17 @@ ol, ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 a:link, a:visited {
+  text-decoration: none;
   color: inherit;
 }
 
 h1, h2, p {
   line-height: 1;
+}
+
+button, input {
+  border: none;
 }
 
 /* 
@@ -103,7 +104,8 @@ p {
   text-align: justify;
 }
 
-a.boton {
+.boton {
+  cursor: pointer;
   letter-spacing: 0.1em;
   font-size: 0.8rem;
   padding: 1em 2.5em;
@@ -198,13 +200,13 @@ main p {
   font-size: 1.125rem;
 }
 
-main a.boton {
+main .boton {
   margin-top: 0.8rem;
   background-color: white;
   color: var(--colorPrimario);
 }
 
-main a.boton:hover {
+main .boton:hover {
   background-color: var(--colorHover);
   color: white;
   transition-duration: 0.5s;
@@ -280,8 +282,8 @@ SECCIÓN FORMULARIO
   margin: 2rem 0px 1rem 0px;
 }
 
-input {
-  display: block;
+div.contenedorInput {
+  margin: 1em 0px;
 }
 
 /*

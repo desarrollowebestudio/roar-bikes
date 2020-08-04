@@ -105,13 +105,19 @@
         <form name="Contacto" method="POST" data-netlify="true">
 
           <!-- Campo 1: Nombre -->
-          <input type="text" name="Nombre"/>
+          <div class="contenedorInput">
+            <label for="campoNombre">Nombre: </label>
+            <input id="campoNombre" type="text" name="Nombre" placeholder="Nombre Completo"/>
+          </div>
 
           <!-- Campo 2: E-mail -->
-          <input type="email" name="Correo"/>
+          <div class="contenedorInput">
+            <label for="campoCorreo">E-mail: </label>
+            <input id="campoCorreo" type="email" name="Correo" placeholder="Correo Electrónico"/>
+          </div>
 
           <!-- Botón Enviar -->
-          <input type="submit" value="Enviar"/>
+          <button class="boton" type="submit">Enviar</button>
 
         </form>
       </section>
